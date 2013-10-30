@@ -22,6 +22,26 @@ end
 
 gem 'jquery-rails'
 
+group :development do
+	gem 'sqlite3'
+	gem 'rspec-rails' '2.6.1', :require => 'rspec-rails'
+	gem 'faker',  '0.3.1'
+end
+
+group :test do
+	gem 'sqlite3'
+	gem 'rspec-rails' '2.6.1', :require => 'rspec-rails'
+	gem 'webrat', '0.7.1'
+	gem 'factory_girl_rails', '1.0'
+	gem 'turn', :require => false
+end
+
+group :production do
+	gem 'pg'
+end
+
+
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
