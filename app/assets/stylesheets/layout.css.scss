@@ -1,0 +1,79 @@
+/* layout.css
+* 
+* Basic styling for static pages 
+*
+*/
+
+@import "site-branding";
+
+body {
+ font-family: $body-font;
+}
+
+h1, h2 {
+  color: $near-black;
+  font-family: $heading-font;
+}
+
+h3 {
+  color: #50b450;
+  font: italic bold 20px $accent-font;
+}
+
+
+
+
+div#container {
+  display: block;
+  position: relative;
+  min-height: 1000px;
+  width: 1000px;
+  margin: 0 auto;
+  padding: 0;
+  background-color: #00FFFF;
+}
+
+header#page_header {
+  background-color: blue;
+  text-align: center;
+  color: #FFFFFF;
+  padding: 10px 15px;
+}
+nav#utility {
+  float: right;
+  font-size: 1em;
+}
+
+section#main {
+  float: left;
+  width: 700px;
+  padding: 0 15px;
+}
+
+section#sidebar {
+  margin-left: 750px;
+  padding: 10px;
+}
+
+footer {
+  clear: left;
+}
+
+nav#main_nav {
+  ul {
+    text-align: center;
+  }
+  li {
+    display: inline-block;
+    margin: 0 2px;
+    padding: 4px 6px;
+    font-size: 1.5em;
+
+    a,
+    a:link,
+    a:visited {
+      color: #FFF;
+      text-decoration: none;
+    }
+  }
+}
