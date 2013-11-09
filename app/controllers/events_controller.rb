@@ -1,17 +1,17 @@
 class EventsController < ApplicationController
   
 before_filter :authenticate_user!, :except => [:index,:show]
-
+respond_to :html, :xml, :json
   # GET /events
   # GET /events.json
   
   def index
     @events = Event.all
+    respond_with(@events)
+    
+      #format.json { render json: @events }
+    #end
 
-    respond_to do |format|
-      format.html # index.html.erb
-      format.json { render json: @events }
-    end
   end
 
   # GET /events/1
