@@ -8,6 +8,8 @@
       <%= event.description %>
     </p>
 
+    <p>
+      <%= image_tag event.image_url(:thumb) if event.image? %>
     <% if user_signed_in? %>
      <p>
       <%= link_to 'Show',event %>

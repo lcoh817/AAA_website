@@ -49,6 +49,10 @@ GEM
       sass (>= 3.2.0)
       thor
     builder (3.0.4)
+    carrierwave (0.9.0)
+      activemodel (>= 3.2.0)
+      activesupport (>= 3.2.0)
+      json (>= 1.7)
     coffee-rails (3.2.2)
       coffee-script (>= 2.2.0)
       railties (~> 3.2.0)
@@ -98,6 +102,8 @@ GEM
     mime-types (1.25)
     mini_portile (0.5.2)
     multi_json (1.8.2)
+    nokogiri (1.6.0)
+      mini_portile (~> 0.5.0)
     nokogiri (1.6.0-x86-mingw32)
       mini_portile (~> 0.5.0)
     normalize-rails (2.1.1)
@@ -133,6 +139,7 @@ GEM
       json (~> 1.4)
     responders (1.0.0)
       railties (>= 3.2, < 5)
+    rmagick (2.13.2)
     sass (3.2.12)
     sass-rails (3.2.6)
       railties (~> 3.2.0)
@@ -169,6 +176,7 @@ PLATFORMS
 
 DEPENDENCIES
   activeadmin
+  carrierwave
   coffee-rails (~> 3.2.1)
   factory_girl_rails (= 1.0)
   faker (= 0.3.1)
@@ -177,6 +185,7 @@ DEPENDENCIES
   normalize-rails (~> 2.1.1)
   pg
   rails (= 3.2.13)
+  rmagick
   sass-rails (~> 3.2.3)
   sprockets (~> 2.0)
   sqlite3

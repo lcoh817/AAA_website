@@ -49,6 +49,9 @@ gem 'meta_search', '>= 1.1.0.pre'
 gem "normalize-rails", "~> 2.1.1"
 
 gem 'sprockets', '~> 2.0'
+gem 'rmagick'
+gem 'carrierwave'
+
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

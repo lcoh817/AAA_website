@@ -1,7 +1,9 @@
 class Event < ActiveRecord::Base
-  attr_accessible :date, :description, :title
+  attr_accessible :date, :description, :title, :image
 
-  validates_presence_of :title, :date, :description
+  mount_uploader :image, ImageUploader
+
+  validates_presence_of :title, :date, :description, :image
 
   has_many :comments, :dependent => :destroy
 end
